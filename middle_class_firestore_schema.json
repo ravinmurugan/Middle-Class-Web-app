@@ -1,0 +1,146 @@
+{
+  "collections": {
+    "income": {
+      "fields": [
+        {
+          "name": "source",
+          "type": "text"
+        },
+        {
+          "name": "type",
+          "type": "text"
+        },
+        {
+          "name": "sub_type",
+          "type": "text"
+        },
+        {
+          "name": "amount",
+          "type": " "
+        },
+        {
+          "name": "date_received",
+          "type": "timestamp"
+        },
+        {
+          "name": "account_type",
+          "type": "text"
+        },
+        {
+          "name": "is_recurring",
+          "type": "boolean"
+        },
+        {
+          "name": "frequency",
+          "type": "text"
+        },
+        {
+          "name": "currency",
+          "type": "text"
+        }
+      ]
+    },
+    "expenses": {
+      "fields": [
+        {
+          "name": "category",
+          "type": "text"
+        },
+        {
+          "name": "amount",
+          "type": "number"
+        },
+        {
+          "name": "details",
+          "type": "text"
+        },
+        {
+          "name": "date_spent",
+          "type": "timestamp"
+        },
+        {
+          "name": "account_type",
+          "type": "text"
+        },
+        {
+          "name": "is_recurring",
+          "type": "boolean"
+        },
+        {
+          "name": "frequency",
+          "type": "text"
+        },
+        {
+          "name": "currency",
+          "type": "text"
+        }
+      ]
+    },
+    "debts": {
+      "fields": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "balance",
+          "type": "number"
+        },
+        {
+          "name": "interest_rate",
+          "type": "number"
+        },
+        {
+          "name": "min_payment",
+          "type": "number"
+        },
+        {
+          "name": "due_date",
+          "type": "timestamp"
+        }
+      ]
+    },
+    "payments": {
+      "fields": [
+        {
+          "name": "debt_id",
+          "type": "text"
+        },
+        {
+          "name": "user_id",
+          "type": "text"
+        },
+        {
+          "name": "amount",
+          "type": "number"
+        },
+        {
+          "name": "date_paid",
+          "type": "timestamp"
+        }
+      ]
+    },
+    "users": {
+      "fields": [
+        {
+          "name": "full_name",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "type": "text"
+        },
+        {
+          "name": "family_id",
+          "type": "text"
+        },
+        {
+          "name": "currency_preference",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "version": "1.1",
+  "description": "Updated Firestore schema for Middle Class app with Flow-inspired enhancements"
+}
